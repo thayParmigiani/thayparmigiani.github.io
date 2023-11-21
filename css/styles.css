@@ -1,0 +1,63 @@
+.container-fluid:nth-child(1) {
+    background-color: #E89897;
+}
+
+.container-fluid:nth-child(2) {
+    background-color: #FFC98B;
+}
+
+.container-fluid:nth-child(3) {
+    background-color: #F9E7E7;
+    height: 350px;
+}
+
+
+.nav-item {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.nav-item .nav-link {
+    color: #6B6464;
+}
+
+.nav-item .nav-link:hover {
+    color: #6B6464;
+}
+
+.nav-item .nav-link:focus {
+    color: #6B6464;
+}
+
+.nav-item .dropdown-menu {
+    background-color: #FFC98B;
+}
+
+.nav-item .dropdown-menu::after {
+    background-color: #FFC98B;
+}
+
+.nav-item .dropdown-menu .dropdown-item {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #E89897;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.info-text {
+    color: #6B6464;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
