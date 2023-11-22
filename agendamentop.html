@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tiro+Devanagari+Marathi">
+    <title>Banho Pequeno Porte</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-md">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.svg" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="d-flex col-6" role="search">
+                            <input class="form-control me-2 rounded-pill custom-search-input" type="search"
+                                placeholder="Buscar..." aria-label="Search">
+                        </form>
+                        <br>&nbsp;&nbsp;
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">Meu Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <ul class="nav justify-content-center">
+            <li class="nav-item dropdown col-md-2">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Produtos</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="racaoumida.html">Ração Úmida</a></li>
+                    <li><a class="dropdown-item" href="racaoseca.html">Ração Seca</a></li>
+                </ul>
+            </li>
+            <li class="nav-item col-md-2">
+                <a class="nav-link" href="banho.html">Agendamento Banho</a>
+            </li>
+            <li class="nav-item col-md-2">
+                <a class="nav-link" href="tosa.html">Agendamento Tosa</a>
+            </li>
+            <li class="nav-item col-md-2">
+                <a class="nav-link" href="login.html">Entrar ou Cadastrar</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="container-sm col-12">
+            <h3 class="info-text">BANHO PEQUENO PORTE</h3>
+        </div>
+        <div class="container">
+            <div class="row g-0">
+                <div class="col col-4">
+                    <img src="img/banho.svg" alt="BanhoP" height="420px">
+                </div>
+                <div class="col col-7" style="background-color: #F9E6D7;">                   
+                    <div class="row">
+                        <div class="col">
+                            <h6>&nbsp;&nbsp;Escolha a data:</h56>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <select class="form-select rounded-pill"
+                                style="background-color: #6B6464; opacity:65%; color:white"
+                                aria-label="Default select example" id="meses" onchange="updateDays()">
+                                <option selected>Escolha o Mês</option>
+                                <option value="1">Janeiro</option>
+                                <option value="2">Fevereiro</option>
+                                <option value="3">Março</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Maio</option>
+                                <option value="6">Junho</option>
+                                <option value="7">Julho</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Setembro</option>
+                                <option value="10">Outubro</option>
+                                <option value="11">Novembro</option>
+                                <option value="12">Dezembro</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-select rounded-pill"
+                                style="background-color: #6B6464; opacity:65%; color:white"
+                                aria-label="Default select example" id="dias">
+                            </select>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <h6>Agende seu horário:</h6>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">08:00-09:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">09:00-10:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">10:00-11:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">11:00-12:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">12:00-13:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">13:00-14:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">14:00-15:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">15:00-16:00</span>  
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">16:00-17:00</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <span style="color: red;">17:00-18:00</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
