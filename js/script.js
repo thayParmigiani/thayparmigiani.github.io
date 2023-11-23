@@ -1,3 +1,6 @@
+/* Função para peenchimento automático do dropdown de dias
+conforme o mês slecionado */
+
 function updateDays() {
     // Identifica o mês selecionado
     var selectedMonth = document.getElementById("meses").value;

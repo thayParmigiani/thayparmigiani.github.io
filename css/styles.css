@@ -75,3 +75,8 @@
     width:auto;
     opacity: 65%;
 }
+
+.form-check .form-check-input {
+    background-color: #6B6464;
+    opacity: 65%;
+}
