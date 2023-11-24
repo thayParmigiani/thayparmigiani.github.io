@@ -80,3 +80,8 @@
     background-color: #6B6464;
     opacity: 65%;
 }
+
+a.text-center {
+    color: white;
+    font-family: 'Roboto';
+}
